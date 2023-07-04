@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import "app/globals.css";
 import "assets/styles/main.scss";
+import "assets/styles/storybook.css";
 
 const BREAKPOINTS_INT = {
   ["xs [mobile]"]: 375,
@@ -39,6 +40,15 @@ const customViewports = Object.fromEntries(
 // });
 
 const preview: Preview = {
+  globalTypes: {
+    darkMode: {
+      defaultValue: true,
+      stylePreview: true,
+    },
+    className: {
+      defaultValue: "dark",
+    },
+  },
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {

@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -17,6 +12,18 @@ module.exports = {
     },
     extend: {
       colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        sbPrimaryGreen: "#00B04C",
+        sbError: "#DA2020",
+        sbWarning: "#DE8317",
+        sbInfo: "#0288D1",
+        sbSuccess: "#41DB84",
+        sbBlack: "#101010",
+        sbGray: "#6A6A6A",
+        sbGradientGreen: "linear-gradient(177deg, #00B04C 0%, #037534 100%)",
+        sbGradientError: "linear-gradient(177deg, #DA2020 0%, #9A0B0B 100%)",
+        sbGradientDark: "#131313",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,4 +80,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
