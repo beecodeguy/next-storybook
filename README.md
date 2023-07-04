@@ -1,6 +1,7 @@
 ## Getting Started
 
 # Introduction
+
 Fintech Product to help you to visualize and analyze the day to day Nepal Stock market movement.
 
 visit us at:
@@ -65,6 +66,19 @@ We have storybook implemented on the project and for each component we can find 
 ```
 yarn storybook
 ```
+
+Once the storybook is loaded you can visit the storybook on:
+
+```
+http://localhost:6006/
+```
+
+### Storybook Onboarding:
+
+- we can toggle the overall page of storybook by setting `light` and `dark` mode on the toolbar of the storybook
+  ![Toggle Modes](image.png)
+- For checking the tailwind-css `light` mode and `dark` mode we have another `cresent-moon` icon on the toolbar which helps to toggle the components within dark mode and light mode. If `crescent-moon` icon is highlighted we will be seeing the component on the dark mode and vice-versa
+  ![dark/light mode](image-1.png)
 
 ## Default Notes Below (not Recommended)
 
