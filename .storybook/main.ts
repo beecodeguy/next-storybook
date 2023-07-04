@@ -8,7 +8,6 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-styling",
     "storybook-tailwind-dark-mode",
-    "storybook-addon-themes",
   ],
   framework: {
     name: "@storybook/nextjs",
