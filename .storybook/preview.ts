@@ -6,7 +6,7 @@ const BREAKPOINTS_INT = {
   ["xs [mobile]"]: 375,
   ["sm [Tablet]"]: 600,
   ["md [Tablet Landscape]"]: 900,
-  lg: 1200,
+  ["lg [Desktop]"]: 1440,
   xl: 1536,
 };
 
@@ -50,8 +50,22 @@ const preview: Preview = {
     nextjs: {
       appDirectory: true,
     },
-    viewport: { viewports: customViewports },
+    viewport: { viewports: customViewports, defaultViewport: "lg [Desktop]" },
     layout: "fullscreen",
+    backgrounds: {
+      default: "dark",
+      values: [
+        {
+          name: "dark",
+          value: "#111",
+          // value: "#161c2d",
+        },
+        {
+          name: "light",
+          value: "#f9f9f9",
+        },
+      ],
+    },
   },
 };
 
