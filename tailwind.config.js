@@ -6,9 +6,23 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    },
+    screens: {
+      lg: "1440px",
+      md: "768px",
+      sm: "375px",
+    },
+    fontWeight: {
+      bold: "700",
+      medium: "500",
+      normal: "400",
+      hairline: "200",
+    },
+    fontSize: {
+      xs: "10px",
+      sm: "12px",
+      md: "14px",
+      base: "16px",
     },
     extend: {
       colors: {
