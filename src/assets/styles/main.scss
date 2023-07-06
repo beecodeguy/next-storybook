@@ -1,3 +1,7 @@
 @import "./base";
 @import "./components";
 @import "./pages";
+
+h1 {
+  @extend .hl-h1-bold;
+}

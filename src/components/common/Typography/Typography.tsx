@@ -1,19 +1,24 @@
 export const Responsive = [
-  { className: "hl-h1-bold", name: "h1 bold" },
-  { className: "hl-h2-bold", name: "h2 bold" },
-  { className: "hl-h3-bold", name: "h3 bold" },
-  { className: "hl-h4-bold", name: "h4 bold" },
+  { className: "hl-h1-bold", name: "h1 (Bold)" },
+  { className: "hl-h2-bold", name: "h2 (Bold)" },
+  { className: "hl-h3-bold", name: "h3 (Bold)" },
+  { className: "hl-h4-bold", name: "h4 (Bold)" },
   { className: "hl-h1", name: "h1" },
   { className: "hl-h2", name: "h2" },
   { className: "hl-h3", name: "h3" },
   { className: "hl-h4", name: "h4" },
-  { className: "hl-body-small", name: "Body small" },
+  { className: "hl-body-bold", name: "Body (medium/p)" },
+  { className: "hl-body-1", name: "Body (Regular/H1)" },
+  { className: "hl-body-2", name: "Body (Regular/H2)" },
+  { className: "hl-body-3", name: "Body (Regular/H3)" },
+  { className: "hl-body-4", name: "Body (Regular/H4)" },
+  { className: "hl-body-small", name: "Body (Regular/P)" },
 ];
 export const BasicFont = ({ name, className }: { name: string; className: string }) => {
   return (
-    <div className={`font-wrapper ${className}`}>
-      <span>{name}</span>
-      <span>Lorem ipsum dolor sit amet</span>
+    <div className={`font-wrapper ${className} flex justify-between items-start gap-5 border-b p-3`}>
+      <span className="min-w-max text-sbBlack">{name}</span>
+      <span className="text-sbBlack">Lorem ipsum dolor sit amet</span>
     </div>
   );
 };
