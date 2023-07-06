@@ -16,4 +16,4 @@ const meta: Meta<typeof TypographyComponent> = {
 export default meta;
 type Story = StoryObj<typeof TypographyComponent>;
 
-export const BaseButton: Story = {};
+export const Typography: Story = {};
