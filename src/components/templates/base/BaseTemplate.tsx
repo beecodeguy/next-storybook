@@ -5,7 +5,7 @@ export interface IBaseTemplateProps {
 }
 
 const BaseTemplate: FC<IBaseTemplateProps> = ({ stringProps }) => {
-  return <div className={` bg-sbError dark:bg-sbWarning px-5 py-5 text-white`}>{stringProps}</div>;
+  return <div className={`bg-sbSuccess dark:bg-sbGray px-5 py-5 text-white`}>{stringProps}</div>;
 };
 
 export default BaseTemplate;
