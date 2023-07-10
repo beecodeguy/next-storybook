@@ -19,7 +19,7 @@ const customViewports = Object.fromEntries(
         name: key,
         styles: {
           width: `${val}px`,
-          height: `${(idx + 5) * 10}vh`,
+          height: `${(idx + 6.5) * 10}vh`,
         },
       },
     ];
@@ -45,7 +45,7 @@ const preview: Preview = {
       stylePreview: true,
     },
     className: {
-      defaultValue: "dark",
+      defaultValue: "",
     },
   },
   parameters: {
@@ -62,7 +62,7 @@ const preview: Preview = {
     viewport: { viewports: customViewports, defaultViewport: "lg [Desktop]" },
     layout: "fullscreen",
     backgrounds: {
-      default: "dark",
+      default: "light",
       values: [
         {
           name: "dark",
