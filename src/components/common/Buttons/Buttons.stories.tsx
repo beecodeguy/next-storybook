@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import ButtonsComponent from "components/common/Buttons/Buttons";
+import { Button as ButtonsComponent } from "shad/components/ui/button";
 
 const meta: Meta<typeof ButtonsComponent> = {
   title: "Components/Common/Buttons",
@@ -18,7 +18,6 @@ type Story = StoryObj<typeof ButtonsComponent>;
 
 export const BaseButton: Story = {
   args: {
-    btnText: "Enter your Text",
-    handleBtnClick: () => console.log("btn clicked"),
+    text: "Base Button",
   },
 };

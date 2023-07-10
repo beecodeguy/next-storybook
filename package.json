@@ -20,6 +20,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@reduxjs/toolkit": "^1.9.5",
     "@storybook/codemod": "6.4.19",
     "@storybook/storybook-deployer": "^2.8.16",
