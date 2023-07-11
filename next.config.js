@@ -11,10 +11,14 @@ const nextConfig = {
     domains: [], // for importing images
   },
   webpack(config) {
-    config.experiments = {
-      ...config.experiments,
-      topLevelAwait: true,
-    };
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [{ loader: "@svgr/webpack", options: { icon: true } }],
+    });
+    // config.experiments = {
+    //   ...config.experiments,
+    //   topLevelAwait: true,
+    // };
     return config;
   },
   sassOptions: {
