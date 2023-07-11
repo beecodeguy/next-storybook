@@ -51,6 +51,7 @@ module.exports = {
         },
         sbBlack: "#101010",
         sbGray: "#6A6A6A",
+        sbWhite: "#fff",
         sbGradientGreen: "linear-gradient(177deg, #00B04C 0%, #037534 100%)",
         sbGradientError: "linear-gradient(177deg, #DA2020 0%, #9A0B0B 100%)",
         sbGradientDark: "#131313",
@@ -91,9 +92,11 @@ module.exports = {
       },
     },
     borderRadius: {
-      lg: "var(--radius)",
-      md: "calc(var(--radius) - 2px)",
-      sm: "calc(var(--radius) - 4px)",
+      DEFAULT: "4px",
+      lg: "14px",
+      md: "12px",
+      sm: "8px",
+      xs: "4px",
     },
     keyframes: {
       "accordion-down": {
