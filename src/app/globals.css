@@ -17,6 +17,6 @@ html * {
 
 @layer base {
   body {
-    @apply bg-sbBlack text-white;
+    @apply bg-sbBlack text-sbGradientDark;
   }
 }
