@@ -3,8 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
 
 import { cn } from "lib/utils";
-
-import { GoogleIcon } from "assets/images/icon";
+import Image from "next/image";
 
 const buttonVariants = cva(
   "flex items-center justify-center rounded text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -63,7 +62,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <Comp className={cn(buttonVariants({ variant, size, outlined, className }))} ref={ref} {...props}>
         {/* {Icon && <span className="min-w-[24px] max-w-[24px] min-h-[24px] max-h-[24px]">{Icon}</span>} */}
         <span>{text}</span>
-        <GoogleIcon />
+        {/* <GoogleIcon /> */}
+        <Image src="assets/images/icon/icon_google.svg" width={24} height={24} alt="icon" />
+        {/* <img src="src/assets/images/icon/icon_google.svg" alt="" /> */}
       </Comp>
     );
   },

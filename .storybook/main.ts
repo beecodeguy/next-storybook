@@ -22,13 +22,11 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   webpackFinal: async config => {
-    config.module?.rules?.unshift({
+    config.module?.rules?.push({
       test: /\.svg$/,
-      use: [{ loader: "@svgr/webpack", options: { icon: true } }],
+      loader: require.resolve("@svgr/webpack"),
     });
-    return {
-      ...config,
-    };
+    return config;
   },
 };
 export default config;
